@@ -1,4 +1,5 @@
 import React from "react";
+import { MyCardColors, MyCardTitle } from "./StarWarsStyles.js";
 import {
   Card,
   CardBody,
@@ -14,11 +15,11 @@ const CharacterCard = props => {
     <Col xs="6" md="4" xl="3">
       <Card>
         <CardHeader> Name: </CardHeader>
-        <CardTitle>{props.character.name} </CardTitle>
+        <MyCardTitle>{props.character.name} </MyCardTitle>
         <CardBody>
-          <CardText>Birth Year: {props.character.birth_year}</CardText>
-          <CardText>Height: {props.character.height}cm</CardText>
-          <CardText>Weight: {props.character.mass}Kilograms</CardText>
+          <MyCardColors>Birth Year: {props.character.birth_year}</MyCardColors>
+          <MyCardColors>Height: {props.character.height}cm</MyCardColors>
+          <MyCardColors>Weight: {props.character.mass}Kilograms</MyCardColors>
         </CardBody>
       </Card>
     </Col>
